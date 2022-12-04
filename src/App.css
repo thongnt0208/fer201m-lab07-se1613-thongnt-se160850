@@ -1,0 +1,205 @@
+/* @import url('./scss/homepage.scss'); */
+/* @import url('./scss/contact.scss'); */
+/* @import url('./scss/projects.scss'); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Homepage */
+.homepage-box {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+}
+
+.homepage-box .background-img {
+  position: fixed;
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  top: 0;
+}
+
+.homepage-box .background-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-box .box-container {
+  max-width: 60%;
+  height: 50%;
+}
+
+.homepage-box .box-container .paper {
+  min-height: 720px;
+  height: fit-content;
+  display: flex;
+}
+
+.homepage-box .box-container .paper .navbar-container {
+  width: 0;
+}
+
+.homepage-box .box-container .paper .navbar-container nav {
+  position: absolute;
+  max-width: 56%;
+  right: 22%;
+  top: 6rem;
+  background-color: #4caf50;
+}
+
+.homepage-box .box-container .paper .navbar-container nav .logo {
+  text-align: left;
+}
+
+.homepage-box .box-container .paper .container {
+  display: inline-block;
+  margin-top: 4rem;
+  min-height: 400px;
+}
+
+.homepage-box .box-container .paper .text-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.homepage-box .box-container .paper .text-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.homepage-box .box-container .paper .text-container h4 {
+  margin-top: 1.5rem;
+}
+
+.homepage-box .box-container .paper .text-container .chip-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.homepage-box .box-container .paper .text-container .chip-container .chip {
+  margin: 4px 4px;
+}
+
+.homepage-box .box-container .paper .text-container .chip-container .chip:hover {
+  background-color: #c6f4d6;
+}
+
+.homepage-box .box-container .paper .text-container .send-button {
+  margin-top: 1.5rem;
+  background-color: #4caf50;
+}
+
+.homepage-box .box-container .paper .text-container .send-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.homepage-box .box-container .paper .avatar-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.homepage-box .box-container .paper .avatar-container img {
+  width: 100%;
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Contact */
+.fadein {
+  opacity: 0;
+  -moz-transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+.loaded .fadein {
+  opacity: 1;
+}
+
+.contact-container {
+  position: relative;
+  top: 4rem;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.contact-container a {
+  display: inline-block;
+  width: 300px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-container a .card {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.contact-container .back-button {
+  width: 100px;
+  background-color: #4caf50;
+  margin-bottom: 2rem;
+}
+
+#button {
+  width: 100px;
+  background-color: #4caf50;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Contact redux store, call mockapi */
+.hideThis {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  #other-contacts-container {
+    display: inline-block;
+  }
+}
+
+
+#users-container {
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+#users-container a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  font-size: 2rem;
+}
+
+#google-login-btn{
+  margin: 0 auto
+}
+
+.login-header{
+  color: white;
+}
+
+.login-by-google{
+  position: absolute;
+  top: 6.5rem;
+  left: 22%;
+  z-index: 1111;
+}
